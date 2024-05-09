@@ -15,3 +15,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.sidebar::-webkit-scrollbar {
+  display: block;
+  width: 7px;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Change the background color of the track */
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555; /* Change the color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change the color of the scrollbar handle on hover */
+}
