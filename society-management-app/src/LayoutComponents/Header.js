@@ -9,7 +9,7 @@ export default function Header({setSidebar}) {
     return (
         <>
             <div
-                className=" flex w-full lg:ml-[288px] md:ml-[288px] lg:max-w-[calc(100%-288px)] md:max-w-[calc(100%-288px)] h-14 bg-gray-100"
+                className=" sticky top-0 flex flex-wrap w-full lg:ml-[288px] md:ml-[288px] lg:max-w-[calc(100%-288px)] md:max-w-[calc(100%-288px)]  bg-gray-50"
             >
                 <p
                     className='block md:hidden lg:hidden text-xl font-serif font-semibold pl-5 py-3 cursor-pointer'
@@ -18,7 +18,7 @@ export default function Header({setSidebar}) {
                     :::
                 </p>
                 <p
-                    className='text-xl font-serif font-semibold pl-5 py-3'
+                    className=' text-lg md:text-xl lg:text-2xl font-serif font-semibold pl-5 py-3'
                 >
                     SOCIETY MANAGEMENT PORTAL
                 </p>

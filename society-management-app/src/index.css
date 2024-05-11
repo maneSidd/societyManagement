@@ -24,6 +24,10 @@ code {
   border-radius: 10px;
 }
 
+input{
+  background-color: white;
+}
+
 /* Track */
 .sidebar::-webkit-scrollbar-track {
   background: #f1f1f1; /* Change the background color of the track */
