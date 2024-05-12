@@ -12,7 +12,7 @@ function App() {
     <>
       <Router>
         <Routes>     
-        <Route path="/registeration" element={<Registeration></Registeration>}></Route>   
+        <Route path="/" element={<Registeration></Registeration>}></Route>   
           <Route path="/admin" element={<Dashboard></Dashboard>}>
             <Route index element={<AdminDash></AdminDash>}></Route>        
             <Route path="add-owner" element={<AddOwner></AddOwner>}></Route> 

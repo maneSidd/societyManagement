@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AdminRegisteration from "./AdminRegisteration";
 import SocietyRegisteration from "./SocietyRegisteration";
+import { Link } from "react-router-dom";
 
 export default function Registeration() {
 
@@ -78,9 +79,14 @@ export default function Registeration() {
                     className="flex flex-wrap z-30 w-full bg-gray-300"
                 >
                     <p
-                        className='font-serif font-semibold pl-5 py-3 uppercase'
+                        className='w-[80%]  font-serif font-semibold pl-5 py-3 uppercase'
                     >
                         SOCIETY registeration
+                    </p>
+                    <p 
+                    className='w-[20%] flex items-center justify-end pr-5 font-serif font-semibold pl-5 py-3 uppercase text-blue-800'
+                    >
+                    <Link to="/admin">Log In</Link>
                     </p>
                 </div>
             </div>
