@@ -4,7 +4,7 @@ export default function AddOwner() {
 
     return (
         <>
-            <div className="flex items-center justify-center w-[95%] mx-[2.5%] md:mx-0 lg:mx-0 md:w-full lg:w-full h-full p-3  mt-8 ">
+            <div className="flex items-center justify-center w-[95%] mx-[2.5%] md:mx-0 lg:mx-0 md:w-full lg:w-full h-full p-3  mt-5 ">
                 <div className="bg-blue-100 p-5 rounded-lg">
                     <form>
                         <table>

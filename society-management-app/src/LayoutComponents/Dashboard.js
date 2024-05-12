@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 import NavigationBar from "./NavigationBar";
@@ -12,10 +12,27 @@ export default function Dashboard() {
         setMenuVisible(status);
     }
 
+
+    useEffect(() => {
+        function handleResize() {
+          const threshold = window.screen.width * 0.4; // 40% of the full screen width
+          if (window.innerWidth > threshold) {
+            setMenuVisible(false);
+          }
+        }
+        handleResize();
+    
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+      }, [window.innerWidth]);
+
     return (
         <>
-            <Header setSidebar={setSidebar}></Header>
-            <NavigationBar></NavigationBar>
+            <div className="sticky top-0">
+                <Header setSidebar={setSidebar}></Header>
+                <NavigationBar></NavigationBar>
+            </div>
             <Sidebar sidebarState={menuVisible} updateState={setSidebar}></Sidebar>
             <div className="ml-0 lg:ml-[288px] md:ml-[288px]">
                 <Outlet/>

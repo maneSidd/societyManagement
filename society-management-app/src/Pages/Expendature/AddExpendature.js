@@ -61,7 +61,7 @@ export default function AddExpendature() {
                                 </td>
                             </tr>
 
-                            <tr>
+                            <tr className="hidden md:block">
                                 <td>
                                     <div className="mb-6 relative">
                                         <input
@@ -115,6 +115,63 @@ export default function AddExpendature() {
                                     </div>
                                 </td>
                             </tr>
+
+                            <tr className="block md:hidden lg:hidden">
+                                <td colSpan={2}>
+                                    <div className="mb-6 relative">
+                                        <input
+                                            type="text"
+                                            name="shopName"
+                                            id="shopName"
+                                            placeholder=""
+                                            required
+                                            className="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        />
+                                        <label
+                                            htmlFor="shopName"
+                                            className="ml-1 absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                        >Shop Name
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="mb-6 relative">
+                                        <input
+                                            type="text"
+                                            name="amount"
+                                            id="amount"
+                                            placeholder=""
+                                            required
+                                            className="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        />
+                                        <label
+                                            htmlFor="amount"
+                                            className="ml-1 absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                        >Expendature Amount
+                                        </label>
+                                    </div>
+                                </td>
+                                </tr>
+
+                                <tr className="block md:hidden lg:hidden">
+                                <td colSpan={3}>
+                                    <div className="mb-6 relative w-full">
+                                        <input
+                                            type="file"
+                                            name="invoice"
+                                            id="invoice"
+                                            placeholder=""
+                                            required
+                                            className="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        />
+                                        <label
+                                            htmlFor="invoice"
+                                            className="ml-1 absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                        > Invoice
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>                                
 
                             <tr>
                                 <td colSpan={3} align="center">

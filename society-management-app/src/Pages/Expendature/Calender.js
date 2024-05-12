@@ -28,7 +28,7 @@ export default function Calender() {
 
   return (
     <>
-      <div className="border border-black">
+      <div className="">
 
         <div
           className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-10 mt-8"
@@ -38,8 +38,9 @@ export default function Calender() {
               return (
                 <button
                   className={` 
-                  ${number == new Date().getDate() ? "bg-green-500" : "bg-gray-300"} 
-                  text-xl p-5 rounded-lg m-3
+                  ${number == new Date().getDate() ? "bg-green-700" : "bg-green-300"} 
+                  ${number == new Date().getDate() ? "text-white" : "text-black"} 
+                  text-xl font-mono p-5 rounded-lg m-3
                 `}
                   disabled={number == new Date().getDate() ? false : true}
                   onClick={() => { navigate("/admin/add-expendature"); }}

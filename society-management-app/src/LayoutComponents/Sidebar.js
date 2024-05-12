@@ -46,7 +46,7 @@ export default function Sidebar({ sidebarState, updateState }) {
                 {/* Sidebar Menus */}
                 <div className="w-full h-[100%] bg-blue-300 overflow-y-auto  sidebar" style={{ WebkitScrollbarThumb: { backgroundColor: 'red' } }}>
                     <ul>
-                        <li className="w-full font-serif font-semibold bg-cyan-700">
+                        <li className="w-full font-serif font-semibold bg-cyan-700 text-white">
                             <button
                                 className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white border-t-2 border-t-white"
                                 onClick={(e) => { handleMenu("item1") }}
@@ -87,7 +87,7 @@ export default function Sidebar({ sidebarState, updateState }) {
 
                         </li>
 
-                        <li className="w-full font-serif font-semibold bg-cyan-700">
+                        <li className="w-full font-serif font-semibold bg-cyan-700 text-white">
                             <button
                                 className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
                                 onClick={(e) => { handleMenu("item2") }}
@@ -131,7 +131,7 @@ export default function Sidebar({ sidebarState, updateState }) {
 
                         </li>
 
-                        <li className="w-full  font-serif font-semibold  bg-cyan-700">
+                        <li className="w-full  font-serif font-semibold  bg-cyan-700 text-white">
                             <button
                                 className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
                                 onClick={(e) => { handleMenu("item3") }}
@@ -151,7 +151,7 @@ export default function Sidebar({ sidebarState, updateState }) {
                             }
                         </li>
 
-                        <li className="w-full  font-serif font-semibold  bg-cyan-700">
+                        <li className="w-full  font-serif font-semibold  bg-cyan-700 text-white">
                             <button
                                 className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
                                 onClick={(e) => { handleMenu("item4") }}
@@ -183,6 +183,8 @@ export default function Sidebar({ sidebarState, updateState }) {
 
             </div>
 
+            {/* Mobile Views */}
+
             {
                 sidebarState == true &&
                 <>
@@ -206,138 +208,138 @@ export default function Sidebar({ sidebarState, updateState }) {
                         {/* Sidebar Menus */}
                         <div className="w-full h-[100%] bg-cyan-500 overflow-y-auto  sidebar" style={{ WebkitScrollbarThumb: { backgroundColor: 'red' } }}>
                             <ul>
-                            <li className="w-full font-serif font-semibold bg-cyan-700">
-                            <button
-                                className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white border-t-2 border-t-white"
-                                onClick={(e) => { handleMenu("item1") }}
-                            >
-                                ALL
-                            </button>
-                            {
-                                isActive == "item1" && (
-                                    <ul>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL OWNERS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL RENTERS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL FLATS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL SHOPS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL SHOPKEEPERS
-                                            </button>
-                                        </li>
-                                    </ul>
-                                )
-                            }
+                                <li className="w-full font-serif font-semibold bg-cyan-700">
+                                    <button
+                                        className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white border-t-2 border-t-white"
+                                        onClick={(e) => { handleMenu("item1") }}
+                                    >
+                                        ALL
+                                    </button>
+                                    {
+                                        isActive == "item1" && (
+                                            <ul>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL OWNERS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL RENTERS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL FLATS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL SHOPS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL SHOPKEEPERS
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        )
+                                    }
 
-                        </li>
+                                </li>
 
-                        <li className="w-full font-serif font-semibold bg-cyan-700">
-                            <button
-                                className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
-                                onClick={(e) => { handleMenu("item2") }}
-                            >
-                                ADD
-                            </button>
-                            {
-                                isActive == "item2" && (
-                                    <ul>
-                                        <li>
-                                            <button
-                                                onClick={() => { navigate("/admin/add-owner") }}
-                                                className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400"
-                                            >
-                                                ADD OWNER
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ADD RENTER
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ADD FLATS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL SHOPS
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                ALL SHOPKEEPERS
-                                            </button>
-                                        </li>
-                                    </ul>
-                                )
-                            }
+                                <li className="w-full font-serif font-semibold bg-cyan-700">
+                                    <button
+                                        className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
+                                        onClick={(e) => { handleMenu("item2") }}
+                                    >
+                                        ADD
+                                    </button>
+                                    {
+                                        isActive == "item2" && (
+                                            <ul>
+                                                <li>
+                                                    <button
+                                                        onClick={() => { navigate("/admin/add-owner") }}
+                                                        className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400"
+                                                    >
+                                                        ADD OWNER
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ADD RENTER
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ADD FLATS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL SHOPS
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        ALL SHOPKEEPERS
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        )
+                                    }
 
-                        </li>
+                                </li>
 
-                        <li className="w-full  font-serif font-semibold  bg-cyan-700">
-                            <button
-                                className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
-                                onClick={(e) => { handleMenu("item3") }}
-                            >
-                                MAINTAINANCE
-                            </button>
-                            {
-                                isActive == "item3" && (
-                                    <ul>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                MAINTAINANCE
-                                            </button>
-                                        </li>
-                                    </ul>
-                                )
-                            }
-                        </li>
+                                <li className="w-full  font-serif font-semibold  bg-cyan-700">
+                                    <button
+                                        className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
+                                        onClick={(e) => { handleMenu("item3") }}
+                                    >
+                                        MAINTAINANCE
+                                    </button>
+                                    {
+                                        isActive == "item3" && (
+                                            <ul>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        MAINTAINANCE
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        )
+                                    }
+                                </li>
 
-                        <li className="w-full  font-serif font-semibold  bg-cyan-700">
-                            <button
-                                className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
-                                onClick={(e) => { handleMenu("item4") }}
-                            >
-                                EXPENDATURE
-                            </button>
-                            {
-                                isActive == "item4" && (
-                                    <ul>
-                                        <li>
-                                            <button
-                                                className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400"
-                                                onClick={() => { navigate("/admin/calender") }}
-                                            >
-                                                ADD
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
-                                                VIEW
-                                            </button>
-                                        </li>
-                                    </ul>
-                                )
-                            }
-                        </li>
+                                <li className="w-full  font-serif font-semibold  bg-cyan-700">
+                                    <button
+                                        className="text-left w-full h-[40px] pl-2 border-b-2 border-b-white"
+                                        onClick={(e) => { handleMenu("item4") }}
+                                    >
+                                        EXPENDATURE
+                                    </button>
+                                    {
+                                        isActive == "item4" && (
+                                            <ul>
+                                                <li>
+                                                    <button
+                                                        className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400"
+                                                        onClick={() => { navigate("/admin/calender") }}
+                                                    >
+                                                        ADD
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button className="text-left w-full h-[40px] pl-4 border-b-2 border-b-white bg-cyan-400">
+                                                        VIEW
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        )
+                                    }
+                                </li>
                             </ul>
                         </div>
 

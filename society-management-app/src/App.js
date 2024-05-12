@@ -5,12 +5,14 @@ import AdminDash from './Pages/Admin/AdminDash';
 import AddOwner from './Pages/Admin/AddOwner';
 import Calender from './Pages/Expendature/Calender';
 import AddExpendature from './Pages/Expendature/AddExpendature';
+import Registeration from './LayoutComponents/Registeration';
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>        
+        <Routes>     
+        <Route path="/registeration" element={<Registeration></Registeration>}></Route>   
           <Route path="/admin" element={<Dashboard></Dashboard>}>
             <Route index element={<AdminDash></AdminDash>}></Route>        
             <Route path="add-owner" element={<AddOwner></AddOwner>}></Route> 
